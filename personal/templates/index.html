@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Michael Rickertt</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="{% static 'index/css/styles.css' %}">
+  </head>
+  <body>
+    <div class="container">
+      <div class="box-1"></div>
+      <div class="box-2"></div>
+      <div class="box-3">
+	<img src="{% static 'index/img/face.jpg' %}"/>
+	<p>Hi, I'm Michael Rickertt. I am an Australian software engineer living in Cornwall and I just like to build things out of code. That's it, really.
+	</p>
+	<p>You could say I've dabbled in everything ranging from building websites with Django, to setting up Virtual Machines and containers, configuring and deploying web and file servers, writing scripts to automate tasks and a bunch of other stuff too.
+	</p>
+	<p>What I'm most passionate about is system administration and backend development.
+	</p>
+	<div class="skills" class="section">
+	  <h2>Skills and Competencies</h2>
+	  <ul>
+	    <li>Proficiency with python and javascript</li>
+	    <li>Containerisation / virtualisation with docker, LXC, and QEMU</li>
+	    <li>Scripting with bash</li>
+	    <li>RDMS with PostgreSQL</li>
+	  </ul>
+	</div>
+	<div class="education">
+	  <h2>Education</h2>
+	  <ul><li>HyperionDev Software Engineer Bootcamp (2022)</li></ul>
+	</div>
+	<div class="work-experience">
+	  <h2>Work experience</h2>
+	  <ul><li>Warehouse Operative (2016 - present)</li></ul>
+	</div>
+	<div class="projects">
+	  <h2>Projects</h2>
+	  <ul>
+	    <li><a href="{% url 'memory_game_template' %}">Memory Game</a></li>
+	    <li><a href="{% url 'fruit_shop_template' %}">Fruit Shop</a></li>
+	  </ul>
+	</div>
+	<div class="contacts">
+	  <a href="https://github.com/mricke">
+	    <img class="social" src="{% static 'index/img/github.png' %}"/></a>
+	  <a href="https://linkedin.com/in/michael-rickertt-1082b885">
+	    <img class="social" src="{% static 'index/img/linkedin.png' %}"/></a>
+	  <a href="mailto:michael.rickertt@gmail.com">
+	    <img class="social" src="{% static 'index/img/email.png' %}"/></a>
+	  <a href="tel:+4475932993056">
+	    <img class="social" src="{% static 'index/img/phone-call.png' %}"/></a>
+    </div>
+      </div>
+    </div>
+  </body>
+</html>
